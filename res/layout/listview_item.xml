@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/note_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/note_icon"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/note_content"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/note_title"
+        android:layout_toRightOf="@+id/note_icon"
+        android:layout_alignLeft="@+id/note_title"
+        android:text="内容"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+	<ImageView 
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:src="@drawable/arrows"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:padding="5dp"/>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/loading_local_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hint_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/semitransparent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="全部笔记" />
+
+    <com.example.views.XListView
+        android:id="@+id/note_list"
+        android:layout_below="@+id/hint_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/darkgray"
+        android:dividerHeight="0.5dp" >
+    </com.example.views.XListView>
+
+</RelativeLayout>

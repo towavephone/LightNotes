@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity" >
+
+    <TextView
+        android:id="@+id/hint_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/semitransparent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="搜索结果" />
+
+    <com.example.views.XListView
+        android:id="@+id/note_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hint_message"
+        android:divider="@color/darkgray"
+        android:dividerHeight="0.5dp" >
+    </com.example.views.XListView>
+
+</RelativeLayout>

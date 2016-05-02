@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lightnotes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.example.lightnotes.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.CreateNoteActivity"
+            android:label="@string/title_activity_create_note"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.CreateTagActivity"
+            android:label="@string/title_activity_create_tag" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.CreateTypeActivity"
+            android:label="@string/title_activity_create_type" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.CreateTypeTagActivity"
+            android:label="@string/title_activity_create_base" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.EditTypeActivity"
+            android:label="@string/title_activity_edit_type" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.EditTagActivity"
+            android:label="@string/title_activity_edit_tag" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.ShowNoteActivity"
+            android:label="@string/title_activity_show_note" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.CreateEditNoteActivity"
+            android:label="@string/title_activity_create_edit_note" >
+        </activity>
+        <activity
+            android:name="com.example.lightnotes.EditNoteActivity"
+            android:label="@string/title_activity_edit_note" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
